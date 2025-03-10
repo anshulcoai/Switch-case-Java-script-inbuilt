@@ -1,0 +1,64 @@
+<html>
+	<body>
+		<!--Option Menu-->
+		<p>
+			1. Print Your Name<br>
+			2. Print 1 to N Number<br>
+			3. Print All Even Number B/w 1-N<br>
+		</p>
+		
+		<p>
+			Enter Ques. No.  
+			<input type="text" id="ch">
+		</p>
+		
+		
+		<p>  
+			<input type="submit" value="Find Answer" onclick="Choice()">
+		</p>
+		
+		<script>
+			function Choice()
+			{
+				ch1=parseInt(document.getElementById("ch").value)
+				switch (ch1)
+				{
+					case 1:
+						nm=prompt("Enter Name")
+						document.write(nm)
+						break
+				        case 2:
+						n=parseInt(prompt("Enter N Number: "))
+						s=1
+						while (s<=n)
+						{
+							document.write(s,"<br>")
+							s++
+						}
+						break
+						
+					case 3:
+						
+						n=parseInt(prompt("Enter N Number: "))
+						s=1
+						while (s<=n)
+						{
+							if (s%2==0)
+							{
+								document.write(s,"<br>")
+							}
+							s++
+						}
+						break
+						
+					default:
+						document.write("InValid Choice")
+					
+
+				}
+				
+			}
+		</script>
+	</body>
+</html>
+
